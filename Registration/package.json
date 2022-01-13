@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "express": "^4.17.2",
-    "normalize.css": "^8.0.1"
-  }
-}

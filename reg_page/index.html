@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <script type="module" src="./app.js"></script>
+    <div class="main">
+        <div class="container">
+            <form id='form' action="#" method="get" enctype="multipart/form-data">
+                <h1 class="form_title">
+                    Registration
+                </h1>
+                <div class="form_inputs">
+                    <div class="form_input">
+                        <input type="text" id="user_name" name="user_name" placeholder="Enter name" required pattern="[a-zA-Z]+">
+                    </div>
+                    <div class="form_input">
+                        <input type="email" id='user_mail' name="user_mail" value="" placeholder="Email" required >
+                    </div>
+                    <div class="form_input pass">
+                        <input type="password" id="user_pass" name="user_pass" value="" placeholder="Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}">
+                        <div class="user_pass_btn"><img src="../img/eye.svg" alt=""></div>
+                    </div>
+                    <div class="form_input pass">
+                        <input type="password" id="user_pass_check" name="user_pass_check" value="" placeholder="Confirm password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}">
+                        <div class="user_pass_btn"><img src="../img/eye.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="form_button">
+                    <input type="submit" class="button" value="Register">
+                </div>
+            </form>
+            <div id="tester"></div>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup_body">
+            <div class="popup_content">
+                <div class="popup_title">
+                    Registration completed successfully
+                </div>
+                <div class="popup_text">
+                    Thank you for registering
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
